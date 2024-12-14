@@ -1,0 +1,317 @@
+/*personalizar body*/
+
+body {
+    height: 100%;
+    overflow-x: hidden;
+}
+
+* {
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/*personalizando container*/
+.container {
+    display: flex;
+}
+
+/*posicionando logo*/
+.logo {
+    display: flex;
+    padding-left: 1%;
+    padding-top: 10px;
+}
+
+/*personalizando tamanho logo*/
+.logo img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/*posicionando título*/
+.titulo {
+    display: flex;
+    flex-direction: column;
+}
+
+/*personalizando título do site*/
+.nome-site a, .legenda-site a {
+    text-decoration: none; 
+    color: black;
+    font-size:x-large;
+}
+
+/*personalizando legenda*/
+.legenda-site a {
+    font-size: 10px;
+    font-style: italic;
+    margin-left: 22px;
+}
+
+/*posicionando título*/
+.nome-site {
+    display: flex;
+    padding-top: 30px;
+    padding-left: 8px;
+}
+
+/*posicionando legenda do site*/
+.legenda-site {
+    display: flex;
+    
+}
+
+/*alinhamento do menu*/
+.menu {
+    display: flex;
+    flex-direction: row;
+    margin-left: 16%;
+}
+
+.menu div a{
+    display: flex;
+    text-decoration: none;
+    font-size: larger;
+    color: black;
+    padding-left: 60px;
+    padding-top: 30px;
+}
+
+/*personalizar botão*/
+.btn-cadastrar {
+    display: flex;
+    margin-top: 16px;
+    margin-left: 25%;
+}
+
+form button {
+    width: 120px;
+    height: 45px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: larger;
+    color: white;
+    background-color: black;
+    border-radius: 20px;
+    border: none;
+    
+}
+
+/*posicionando painel para dividir a tela na horizontal em duas*/
+.container-painel {
+    display: flex;
+    width: 100%;
+}
+
+.painel-esquerdo {
+    width: 40%;
+}
+
+.painel-direito {
+    width: 60%;
+}
+
+/*personalizando lado esquerdo do site*/
+.painel-chamada {
+    display: flex;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 50px;
+    font-weight: bolder;
+    margin-left: 3%;
+    margin-top: 60px;
+}
+
+.painel-texto {
+    display: flex;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    margin-left: 3%;
+    margin-top: 50px;
+}
+
+.btns-painel {
+    display: flex;
+    flex-direction: row;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 20%;
+    justify-content: center;
+    gap: 25px;
+}
+
+.btn-cardapio, .btn-livros{
+    font-size: larger;
+}
+
+.btn-cardapio {
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+}
+
+/*personalizando lado direito do painel*/
+.painel-imagem img {
+    width: 100%;
+    height: 800px;
+    border-top-left-radius: 60px;
+    border-bottom-left-radius: 60px;
+}
+
+
+/*PERSONALIZAÇÃO PÁGINA SOBRE*/
+.sobre, .cardapio, .livros, .contato {
+    display: flex;
+    justify-content: center;
+    font-size: x-large;
+    font-family: 'Times New Roman', Times, serif;
+    padding-top: 40px;
+}
+
+.container-sobre{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    text-align: center;
+}
+
+.container-sobre-tema, .item-nome {
+    margin-top: 20px;
+}
+
+.container-sobre-texto, .item-descricao {
+    margin-top: 30px;
+    padding: 2px;
+}
+
+.item, .item-cardapio, .item-livros {
+    background-color: #733924;
+    height: 450px;
+    border-radius: 20px;
+    width: 300px;
+    margin-left: 22%;
+    margin-top: 20px;
+}
+
+.item-cardapio, .item-livros {
+    margin-left: 9%;
+    margin-bottom: 10px;
+}
+
+.img-item, .img-cardapio, .img-livros {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.img-item img, .img-cardapio img, .img-livros img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+
+/*personalizando cardápio*/
+.container-cardapio-grid, .container-livros-grid {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 8px;
+    text-align: center;
+}
+
+
+/*personalização dá página de cadastro*/
+.container-cadastro, .container-mensagem {
+    display: flex;
+    width: 600px;
+    height: 90vh;
+    bottom: 30px;
+}
+
+h2 {
+    color: white;
+    position: absolute;
+    left: 36%;
+    margin-top: 200px;
+    
+}
+
+/* personalização div que contém elementos do formulário de cadastro */
+.cadastro, .mensagem {
+    width: 600px;
+    height: 800px;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    position: absolute;
+    left: 33%;
+    border-radius: 20px;
+    top: 120px;
+    margin: auto;
+}
+
+.elementos-cadastro, .elementos-mensagem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: calc(800px - 665px);
+    margin-top: 60px;
+}
+
+label {
+    display: flex;
+    position: relative;
+    right: 143px;
+    margin-top: 20px;
+    color: white;
+}
+
+input {
+    width: 340px;
+    height: 35px;
+    border-radius: 20px;
+    border: none;
+}
+
+input::placeholder {
+    position: absolute;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+}
+
+.container-btn-cadastrar, .container-btn-enviar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.form-btn-cadastrar, .form-btn-enviar {
+    width: 150px;
+    height: 48px;
+    margin-bottom: 5px;
+    color: rgb(0, 0, 0);
+    border: 0;
+    border-radius: 30px;
+    font-family:'Times New Roman', Times, serif;
+    font-size:larger;
+    background-color: rgb(255, 255, 255);
+}
+
+.form-btn-cadastrar:hover, .form-btn-enviar:hover {
+    background-color: rgb(71, 70, 70);
+}
+
+#h2-contato {
+    left: 28%;
+}
+
+#h2-contato2 {
+    padding-top: 25px;
+    left: 26%;
+}
